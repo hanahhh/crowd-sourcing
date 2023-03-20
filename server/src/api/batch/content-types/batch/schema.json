@@ -1,0 +1,92 @@
+{
+  "kind": "collectionType",
+  "collectionName": "batches",
+  "info": {
+    "singularName": "batch",
+    "pluralName": "batches",
+    "displayName": "Batch",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "timeExpired": {
+      "type": "datetime",
+      "required": true
+    },
+    "workerRequire": {
+      "type": "component",
+      "repeatable": false,
+      "component": "batch-info.requirement"
+    },
+    "projectName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "service": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type-job.type-job",
+      "inversedBy": "batches"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "unpublished",
+        "working",
+        "finished",
+        "closed",
+        "expired"
+      ],
+      "default": "unpublished",
+      "required": true
+    },
+    "requester": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "batches"
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "questions.question"
+    },
+    "hits": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hit.hit",
+      "mappedBy": "batch"
+    },
+    "autoPayment": {
+      "type": "boolean",
+      "default": true
+    },
+    "reward": {
+      "type": "biginteger"
+    },
+    "imagePerHIT": {
+      "type": "integer",
+      "required": true
+    },
+    "pack": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

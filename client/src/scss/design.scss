@@ -1,0 +1,13 @@
+.design {
+    display: flex;
+    flex-direction: column !important;
+    input {
+        width: 100% !important;
+    }
+    .ant-space-item {
+        width: 100% !important;
+    }
+    .ant-space {
+        display: flex;
+    }
+}

@@ -1,0 +1,105 @@
+.batch-detail {
+    button {
+        color: white;
+        background: var(--green);
+        padding: 3px 10px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    a {
+        color: white !important;
+        text-decoration: none;
+    }
+    .preview {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        background: var(--light-green);
+        padding: 20px;
+        border-bottom: 1px solid var(--light-grey);
+        margin-top: 20px;
+    }
+    .header-board {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px 10px 0 0;
+        background: var(--light-green);
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--light-grey);
+        p {
+            color: var(--green);
+            font-weight: 500;
+        }
+        
+    }
+    .button-reveal {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    p {
+        margin: 0 !important;
+    }
+    .progress-board {
+        width: 100%;
+        background: var(--light-green);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .ant-progress-inner {
+        background: rgb(218, 218, 218) !important;
+    }
+    .down {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        .setting {
+            width: 68%;
+            background: var(--light-green);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .result {
+            width: 28%;
+            .download {
+                background: var(--light-green);
+                border-radius: 10px;
+                margin-bottom: 20px;
+                padding: 10px;
+                .content {
+                    font-size: 14px;
+                    .upload {
+                        margin-top: 10px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        p {
+                            color: var(--green);
+                        }
+                        .upload-success {
+                            button {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .cost {
+                background: var(--light-green);
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+    }
+    
+}

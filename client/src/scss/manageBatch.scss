@@ -1,0 +1,12 @@
+.manage-batch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ant-progress-inner {
+    border-radius: 0 !important;
+}
+.ant-progress-success-bg, .ant-progress-bg {
+    border-radius: 0 !important;
+    height: 20px !important;
+}

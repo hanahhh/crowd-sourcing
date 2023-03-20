@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_jobs",
+  "info": {
+    "singularName": "type-job",
+    "pluralName": "type-jobs",
+    "displayName": "Type Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "batches": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::batch.batch",
+      "mappedBy": "service"
+    }
+  }
+}

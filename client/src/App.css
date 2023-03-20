@@ -1,0 +1,80 @@
+.App {
+    font-family: 'Montserrat';
+    overflow-x: hidden !important;
+}
+.ant-layout-content {
+    margin-top: 64px !important;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 113px);
+}
+
+.ant-layout-header {
+    background: white !important;
+    border-bottom: 1px var(--dark-green) solid;
+    display: flex;
+    justify-content: space-between;
+}
+.ant-menu{
+    border-bottom: none !important;
+}
+.ant-menu-item {
+    font-size: 16px;
+}
+.ant-menu-item-active {
+    color: var(--green) !important;
+    border-bottom: none !important;
+}
+.ant-menu-item-selected {
+    color: var(--green) !important;
+    font-weight: bold;
+    border-bottom: none !important;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+    border: none !important;
+}
+.ant-menu-horizontal > .ant-menu-item::after, .ant-menu-horizontal > .ant-menu-submenu::after {
+    border: none !important;
+}
+.ant-table-thead > tr > th {
+    background: var(--light-green) !important;
+}
+.ant-layout-footer {
+    background: white !important;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px var(--dark-green) solid;
+}
+.ant-menu-submenu{
+    color: black !important;
+}
+.ant-menu-submenu-inline .ant-menu-submenu-active {
+    color: var(--green) !important;
+}
+.ant-menu-light {
+    color: black;
+} 
+.ant-menu-light .ant-menu-submenu-title:hover {
+    color: var(--green) !important;
+}
+.ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+    color: var(--green) !important;
+}
+.ant-row {
+    display: flex;
+}
+.ant-input-number {
+    width: 100%;
+}
+.ant-space-item {
+    width: 100% !important;}
+.ant-descriptions-item.preview-question{
+    padding-bottom: 0;
+}
+.disableButton{
+    color: black !important; 
+}

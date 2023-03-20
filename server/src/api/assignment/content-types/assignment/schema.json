@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assignments",
+  "info": {
+    "singularName": "assignment",
+    "pluralName": "assignments",
+    "displayName": "Assignment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rewardPerAssignment": {
+      "type": "float",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "working",
+        "submitted",
+        "accepted",
+        "rejected",
+        "expired"
+      ],
+      "default": "available"
+    }
+  }
+}
